@@ -1,2 +1,3 @@
 import ff
-print(dir(ff))
+
+ff.MainMenu()

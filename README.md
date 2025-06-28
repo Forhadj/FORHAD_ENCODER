@@ -1,106 +1,138 @@
+<h1 align="center">💻 FORHAD_ENCODER</h1>
+<p align="center">
+  <b>Marshal + Zlib + Base64 based Python Encoder</b><br>
+  Cython compiled (.so) with colorful animated UI, banner and full CLI tool support.
+</p>
 
-
----
-
-📱 How to Use FORHAD_ENCODER in Termux
-Open Termux and allow storage access (if prompted):
-
-
-termux-setup-storage
-
-
----
-
-⚙️ Step 2: Install Python and Git
-
-pkg update && pkg upgrade
-pkg install python git
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green?style=flat-square">
+  <img src="https://img.shields.io/badge/Protected-Cython.so-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Obfuscation-Marshal%7CZlib%7CB64-red?style=flat-square">
+</p>
 
 ---
 
-📥 Step 3: Clone the Tool from GitHub
+## 📸 Screenshot
+
+<p align="center">
+  <img src="https://github.com/Forhadj/FORHAD_ENCODER/assets/your-screenshot-path.jpg" width="600"/>
+</p>
+
+> Banner, Encoding Result & Menu shown after 15x encoding and `.so` protection
+
+---
+
+## ⚙️ Features
+
+- ✅ Python encoder using `marshal`, `zlib`, and `base64`
+- ✅ Fully compiled `.so` protection via Cython
+- ✅ Colorful ASCII art and menu-driven CLI
+- ✅ Encode count, file size calculation
+- ✅ Support for B16, B32, B64, Zlib, Marshal
+- ✅ No decoding system – full obfuscation for protection
+
+---
+
+## 🔧 Installation & Usage
+
+### 📱 For Termux:
+
+```bash
+pkg update && pkg install python -y
+pip install cython
 
 git clone https://github.com/Forhadj/FORHAD_ENCODER
 cd FORHAD_ENCODER
+chmod +x *
+python Forhad.py
+```
 
+### 🐧 For Linux:
 
----
+```bash
+sudo apt update && sudo apt install python3 -y
+pip3 install cython
 
-✅ Step 4: Run the Tool
-
-python FORHAD_ENCODER_FINAL.py
-
-
----
-
-📋 Step 5: You Will See the Menu
-
-[01] Encode Marshal
- [02] Encode Zlib
- [03] Encode Base16
- [04] Encode Base32
- [05] Encode Base64
- [06] Encode Zlib,Base16
- [07] Encode Zlib,Base32
- [08] Encode Zlib,Base64
- [09] Encode Marshal,Zlib
- [10] Encode Marshal,Base16
- [11] Encode Marshal,Base32
- [12] Encode Marshal,Base64
- [13] Encode Marshal,Zlib,B16
- [14] Encode Marshal,Zlib,B32
- [15] Encode Marshal,Zlib,B64
- [16] Simple Encode
- [17] Exit
-
+git clone https://github.com/Forhadj/FORHAD_ENCODER
+cd FORHAD_ENCODER
+chmod +x *
+python3 Forhad.py
+```
 
 ---
 
-📄 Step 6: How to Encode a Python File
+## 🔐 How to Encode a `.py` File to `.so`
 
-1. Put the Python file (example.py) inside the FORHAD_ENCODER directory.
+✅ **Step-by-step example (as shown in screenshot):**
 
+Suppose you encoded a file **15 times** like this:
 
-2. Run the script and follow the prompts:
+```bash
+# Original file
+/storage/emulated/0/Download/tow.py
 
+# After encoding using FORHAD_ENCODER:
+Encoded Count : 115
+Saved as: /storage/emulated/0/download/tow_FORHAD-EHC99.py
+```
 
+Now, convert the encoded `.py` to `.so` using Cython:
 
-[-] File Name : example.py
- [-] Encode Count : 5
+```bash
+cp /storage/emulated/0/download/tow_FORHAD-EHC99.py iq.py
+cythonize -i iq.py
+```
 
-✅ The tool will encode your file 5 times and save it as:
+You will get:
 
-example_forhad-ehc99.py
+```
+iq.c
+iq.cpython-312.so
+```
 
-✅ It will also show you the final encoded file size.
-
-
----
-
-🛠 If You Get a Permission Error
-
-Run this command to fix execution permission:
-
-chmod +x FORHAD_ENCODER_FINAL.py
-
-
----
-
-🤖 Developer Info
-
-Author: FORHAD
-
-Telegram: @f_forha
-
-GitHub: Forhadj
-
-
+✅ You can now import `iq` in any Python project as a protected `.so` module.
 
 ---
 
-✅ This is the official FORHAD Encoder tool made for ethical, personal, or educational encoding usage only.
-Proudly developed in 🇧🇩 Bangladesh.
+## 🛠 File Structure
 
+```
+FORHAD_ENCODER/
+├── Forhad.py              # Launcher script (calls ff.MainMenu)
+├── ff.cpython-312.so      # Main encoded tool as .so
+├── LICENSE
+├── README.md
+└── [your encoded .py or .so files]
+```
+
+---
+
+## ❗ Tips
+
+- Use `cythonize -i filename.py` to convert `.py` to `.so`
+- Rename file before conversion (e.g. to `iq.py`)
+- To inspect methods in `.so`:
+  ```bash
+  python3 -c "import iq; print(dir(iq))"
+  ```
+
+---
+
+## 🧠 Dev Info
+
+- 👨‍💻 Developer: [@Forhadj](https://github.com/Forhadj)
+- 📣 Telegram: [@f_forha](https://t.me/f_forha)
+- 🌐 From: Bangladesh 🇧🇩
+- 🛠 Tools Used: Python, Cython, Termux
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+- 🌟 Star this repo
+- 📤 Share with your friends
+- 🧠 Learn how Python protection works!
 
 ---

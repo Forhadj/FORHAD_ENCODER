@@ -1,5 +1,5 @@
-import ff
+import en
 
-print(">> Loading Main Menu...")  # Debug line
-ff.MainMenu()
-print(">> Menu function executed.")  # Will not show if there's crash or infinite loop
+print(">> Loading Main Menu...")
+en.MainMenu()
+print(">> Menu function executed.")

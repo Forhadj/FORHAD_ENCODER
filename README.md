@@ -4,11 +4,6 @@
   Cython compiled (.so) with colorful animated UI, banner and full CLI tool support.
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green?style=flat-square">
-  <img src="https://img.shields.io/badge/Protected-Cython.so-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Obfuscation-Marshal%7CZlib%7CB64-red?style=flat-square">
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green?style=flat-square">
@@ -21,7 +16,7 @@
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="https://github.com/Forhadj/FORHAD_ENCODER/blob/main/Screenshot_20250628_003236.jpg" width="600"/>
+  <img src="https://github.com/Forhadj/FORHAD_ENCODER/blob/main/IMG_20250705_233353.jpg" width="600"/>
 </p>
 
 > Banner, Encoding Result & Menu shown after 15x encoding and `.so` protection

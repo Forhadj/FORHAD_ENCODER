@@ -16,7 +16,7 @@
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="https://github.com/Forhadj/FORHAD_ENCODER/blob/main/IMG_20250705_233353.jpg" width="600"/>
+  <img src="https://github.com/Forhadj/FORHAD_ENCODER/blob/main/IMG_20250810_131500.jpg" width="600"/>
 </p>
 
 > Banner, Encoding Result & Menu shown after 15x encoding and `.so` protection
